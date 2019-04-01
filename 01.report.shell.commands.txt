@@ -1,0 +1,53 @@
+ubuntu@ubuntu:~$ echo hello world
+hello world
+ubuntu@ubuntu:~$ passwd
+Enter new UNIX password: 
+Retype new UNIX password: 
+You must choose a longer password
+passwd: Authentication token manipulation error
+passwd: password unchanged
+ubuntu@ubuntu:~$ date
+Mon Apr  1 03:38:30 UTC 2019
+ubuntu@ubuntu:~$ hostname
+ubuntu
+ubuntu@ubuntu:~$ arch
+x86_64
+ubuntu@ubuntu:~$ uname -a
+Linux ubuntu 4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+ubuntu@ubuntu:~$ dmesg
+[ 1254.428716]  sda: sda1 sda2 sda4
+[ 1254.972271]  sda: sda1 sda2 sda4
+[ 1266.223603]  sda: sda1 sda2 sda4
+[ 2315.512741] perf: interrupt took too long (4994 > 4983), lowering kernel.perf_event_max_sample_rate to 40000
+[ 2516.457131] atkbd serio0: Unknown key pressed (translated set 2, code 0xc2 on isa0060/serio0).
+[ 2516.457136] atkbd serio0: Use 'setkeycodes e042 <keycode>' to make it known.
+[ 2516.598536] atkbd serio0: Unknown key released (translated set 2, code 0xc2 on isa0060/serio0).
+[ 2516.598540] atkbd serio0: Use 'setkeycodes e042 <keycode>' to make it known.
+[ 2558.096717] atkbd serio0: Unknown key pressed (translated set 2, code 0xc2 on isa0060/serio0).
+[ 2558.096720] atkbd serio0: Use 'setkeycodes e042 <keycode>' to make it known.
+[ 2558.202435] atkbd serio0: Unknown key released (translated set 2, code 0xc2 on isa0060/serio0).
+[ 2558.202439] atkbd serio0: Use 'setkeycodes e042 <keycode>' to make it known.
+ubuntu@ubuntu:~$ uptime
+ 03:39:00 up 58 min,  1 user,  load average: 2.27, 2.26, 2.09
+ubuntu@ubuntu:~$ who am i
+ubuntu@ubuntu:~$ whoami
+ubuntu
+ubuntu@ubuntu:~$ who
+ubuntu   :0           2019-04-01 09:41 (:0)
+ubuntu@ubuntu:~$ id
+uid=999(ubuntu) gid=999(ubuntu) groups=999(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+ubuntu@ubuntu:~$ last
+ubuntu   :0           :0               Mon Apr  1 09:41   still logged in
+reboot   system boot  4.18.0-15-generi Mon Apr  1 09:40   still running
+
+wtmp begins Mon Apr  1 09:40:47 2019
+ubuntu@ubuntu:~$ finger
+
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+ubuntu@ubuntu:~$ w
+ 03:39:35 up 59 min,  1 user,  load average: 2.15, 2.23, 2.08
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ubuntu   :0       :0               09:41   ?xdm?   2:08   0.01s /usr/lib/gdm3/g
