@@ -1,0 +1,15 @@
+kahn@Ivy:~/Desktop$ find | grep list
+./Practical work 2/list
+kahn@Ivy:~/Desktop$ find | grep "list"
+./Practical work 2/list
+kahn@Ivy:~/Desktop$ wc -l /etc/passwd
+40 /etc/passwd
+kahn@Ivy:~/Desktop$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           5758        1828        2315         186        1614        3495
+Swap:          2047           0        2047
+kahn@Ivy:~/Desktop$ grep -c ^processor /proc/cpuinfo
+4
+kahn@Ivy:~/Desktop$ find /home/kahn/Pictures -name "*.jpg" | wc -l
+0
+
