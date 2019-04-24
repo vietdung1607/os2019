@@ -1,0 +1,33 @@
+ kahn@Ivy:~$ ps -A
+ 9471 ?        00:00:00 kworker/2:0
+ 9472 ?        00:00:00 kworker/3:1
+ 9519 ?        00:00:00 chromium-browse
+ 9556 ?        00:00:00 kworker/1:0
+ 9600 ?        00:00:00 kworker/0:2
+ 9618 ?        00:00:00 kworker/1:1
+ 9622 ?        00:00:00 kworker/2:1
+ 9627 ?        00:00:00 kworker/3:0
+ 9630 ?        00:00:00 xed
+ 9639 pts/0    00:00:00 ps
+
+kahn@Ivy:~$ gnome-calculator
+kahn@Ivy:~$ ps aux | grep calculator | grep -v grep
+kahn     10250  0.7  0.7 717020 41744 ?        Sl   10:53   0:00 gnome-calculator
+kahn@Ivy:~$ cat /proc/10250/status | head
+Name:	gnome-calculato
+Umask:	0002
+State:	S (sleeping)
+Tgid:	10250
+Ngid:	0
+Pid:	10250
+PPid:	1
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+
+kahn@Ivy:~$ kill -STOP 10250
+kahn@Ivy:~$ kill -CONT 10250
+kahn@Ivy:~$ kill 10250
+
+
