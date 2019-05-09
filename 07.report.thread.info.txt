@@ -1,4 +1,0 @@
-kahn@Eve:~$ ps -o nlwp 1152
-NLWP
-  10
-
